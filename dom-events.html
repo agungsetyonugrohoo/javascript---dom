@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dom Selection</title>
+  <style>
+    * { 
+        border: 2px solid #dedede; 
+        padding: 15px; 
+        margin: 15px; 
+    }
+    html { 
+      margin: 0;
+      padding: 0;
+    }
+    body { 
+      max-width: 600px;
+      margin: 30px auto;
+      font-family: sans-serif;
+      color: #333;
+    }
+    /* .p3:active { background-color: lightblue; } 
+    Untuk membuat elemen dengan class p3 ketika di klik bagiannya akan membuat background colornya lightblue akan tetapi ketika di lepas kliknya kembali seperti semula */
+  </style>
+</head>
+<body>
+
+  <h1 id="judul">Hello World</h1>
+  <div id="container">
+      <section id="a">
+          <p class="p1">paragraf 1</p>
+          <a href="http://instagram.com/sandhikagalih">Instagram Sandhika Galih</a>
+          <p class="p2">paragraf 2</p>
+          <!-- Event Handler Inline HTML Attribute adalah suatu cara untuk menerapkan event handler dengan menerapkannya secara inline pada elemen HTMLnya. Akan tetapi metode ini bukanlah metode yang terbaik dikarenakan akan mencampur adukkan antara HTML dengan Javascript yang dimana bisa dilakukan secara terpisah. onClick === onclick -->
+          <p class="p3" onclick="ubahWarnaP3()">paragraf 3</p>
+      </section>
+      <section id="b">
+          <p>paragraf 4</p>
+          <ul>
+              <li>item 1</li>
+              <li>item 2</li>
+              <li>item 3</li>
+          </ul>
+      </section>
+  </div>
+
+<script src="dom-events.js"></script>
+</body>
+</html>
