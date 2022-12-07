@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan DOM</title>
+    <style>
+        /* Untuk mengakali mousemove pada event yang dimana hanya berukuran body sehingga tidak memenuhi ruang browser */
+        html, body {
+            height: 100%;
+        }
+        body {
+            text-align: center;
+        }
+        .kotak {
+            width: 25px;
+            height: 25px;
+            margin: 10px auto;
+        }
+        .merah {
+            background-color: red;
+        }
+        .hijau {
+            background-color: green;
+        }
+        .biru {
+            background-color: blue;
+        }
+        .biru-muda { 
+            background-color: lightblue; 
+        }
+    </style>
+</head>
+<body>
+    <h1>Bermain dengan Warna</h1>
+    <button type="button" id="tUbahWarna">Ubah Warna</button>
+    <br><br>
+    <!-- input type range merupakan sebuah elemen HTML5 berupa slider. Apabila browser tidak support HTML5 maka akan berubah menjadi input type input yang seperti slider tetapi tidak ada pengubah slidernya -->
+
+    <!-- slider merah -->
+    <div class="kotak merah"></div>
+    <input type="range" name="sMerah" min="0" max="255">
+
+    <!-- slider hijau -->
+    <div class="kotak hijau"></div>
+    <input type="range" name="sHijau" min="0" max="255">
+
+    <!-- slider biru -->
+    <div class="kotak biru"></div>
+    <input type="range" name="sBiru" min="0" max="255">
+
+    <script src="latihan-1_bermain-dengan-warna.js"></script>
+</body>
+</html>
