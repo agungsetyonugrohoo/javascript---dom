@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    line-height: 0; /* untuk menghilangkan space di bawah gambar akibat line height default */
+}
+
+body {
+    background-color: #ccc;
+    text-align: center;
+}
+
+.container {
+    width: 600px;
+    margin: 10px auto;
+    border: 5px solid white;
+    overflow: auto; /* agar containernya membungkus seluruh elemen div */
+}
+
+.thumb {
+    width: 200px;
+    float: left;
+    border: 2px solid white;
+    box-sizing: border-box;
+}
+
+.thumb:hover {
+    opacity: 0.5; /* untuk membuat ketika kursor berada di atas gambar terdapat efek opacity */
+    cursor: pointer; /* untuk membuat ketika kursor berada di atas gambar bentuk kursor berubah menjadi tangan sehingga seperti memberikan informasi bisa di klik */
+}
+
+/* menambahkan animasi */
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+.fade {
+    opacity: 0;
+    animation: fadeIn 0.5s forwards; /* forwards berfungsi untuk membuat animasinya berhenti di transisi terakhir dimana defaultnya adalah pada transisi awal */
+}
+
+.active {
+    opacity: 0.5;
+}
